@@ -31,7 +31,6 @@ def get_weather(message):
 
 # name = None
 
-
 # @bot.message_handler(commands=['start'])
 # def start(message):
 #     conn = sqlite3.connect('db.sql')
