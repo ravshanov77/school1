@@ -29,6 +29,7 @@ def get_weather(message):
     else:
         bot.reply_to(message, "Ooops, I couldn't find this city")
 
+
 # name = None
 
 # @bot.message_handler(commands=['start'])
