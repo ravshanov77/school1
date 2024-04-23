@@ -1,33 +1,9 @@
-# import json
 import telebot
-# import requests
 import sqlite3
 import webbrowser
 from telebot import types
 
 bot = telebot.TeleBot('7064640921:AAFUPlUzNWRY79CovZiSrJ55trH1evAic5E')
-# api = 'e6e7347b0b7c998aa4474e708f787ea0'
-
-
-# @bot.message_handler(commands=['start'])
-# def start(message):
-#     bot.send_message(message.chat.id, "Hello, what's up? Write a name of the city")
-
-
-# @bot.message_handler(content_types=['text'])
-# def get_weather(message):
-#     city = message.text.strip().lower()
-#     respond = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}&units=metric')
-#     if respond.status_code == 200:
-#         data = json.loads(respond.text)
-#         temp = data['main']['temp']
-#         bot.reply_to(message, f"The weather in {data['name']} is {temp}°C")
-
-#         image = 'warm.png' if int(temp) >= 15.0 else 'cold.jpg'
-#         file = open(image, 'rb')
-#         bot.send_photo(message.chat.id, file)
-#     else:
-#         bot.reply_to(message, "Ooops, I couldn't find this city")
 
 
 name = None
