@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   scrollbar-width: none;
+  text-decoration: none;
 }
 
 .main-screen {
@@ -17,13 +18,15 @@ body {
 header {
   position: absolute;
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 7%;
+  color: white;
   background-color: lightblue;
   margin-top: 10px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
 }
 
 .logo-img {
@@ -43,6 +46,11 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .right-section {
