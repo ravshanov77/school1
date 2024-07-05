@@ -16,17 +16,39 @@ body {
 
 header {
   position: absolute;
+  display: flex;
   width: 100%;
   height: 7%;
   background-color: lightblue;
   margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-img {
+  width: 4%;
+  background-color: lightcoral;
+}
+
+nav {
+  width: 60%;
+  /* flex: 1; */
 }
 
 nav ul {
   list-style: none;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+.right-section {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: lightcoral;
 }
