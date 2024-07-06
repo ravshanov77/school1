@@ -100,7 +100,7 @@ span {
 
 @media screen and (max-width: 768px) {
   header {
-    flex-direction: column; /* Перестраиваем header по вертикали */
+    flex-direction: column;
     height: auto; /* Даем возможность header адаптировать высоту */
     font-size: 0.75rem; /* Уменьшаем размер шрифта */
   }
