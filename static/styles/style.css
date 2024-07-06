@@ -106,7 +106,7 @@ span {
   }
 
   nav ul {
-    flex-direction: column; /* Вертикально выстраиваем элементы меню */
+    flex-direction: column;
     gap: 10px; /* Уменьшаем промежутки между элементами */
   }
 
