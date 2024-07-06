@@ -101,8 +101,8 @@ span {
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    height: auto; /* Даем возможность header адаптировать высоту */
-    font-size: 0.75rem; /* Уменьшаем размер шрифта */
+    height: auto;
+    font-size: 0.75rem;
   }
 
   nav ul {
