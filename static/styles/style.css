@@ -99,7 +99,6 @@ span {
 }
 
 @media screen and (max-width: 768px) {
-  /* Добавляем медиа-запрос для маленьких экранов */
   header {
     flex-direction: column; /* Перестраиваем header по вертикали */
     height: auto; /* Даем возможность header адаптировать высоту */
