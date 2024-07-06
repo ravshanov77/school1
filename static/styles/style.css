@@ -4,16 +4,16 @@ body {
   margin: 0;
   padding: 0;
   scrollbar-width: none;
-  margin-bottom: 1000px;
+  margin-bottom: 0; /* изменил с 1000px на 0 */
 }
 
 .main-screen {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 800px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/background.png") no-repeat center center;
-  background-size: cover;
+    url("../images/background.png") no-repeat center center/contain;
+  background-size: contain;
 }
 
 header {
@@ -40,9 +40,7 @@ header {
 nav {
   display: flex;
   width: 100%;
-  /* gap: 10px; */
   justify-content: center;
-  /* background-color: lightcoral; */
 }
 
 nav ul {
@@ -64,11 +62,9 @@ nav ul li a {
 .right-section {
   display: flex;
   min-width: 30%;
-
   justify-content: end;
   gap: 10px;
   flex-direction: row;
-  /* background-color: lightblue; */
 }
 
 @media screen and (max-width: 1200px) {
