@@ -5,33 +5,18 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  margin-bottom: 1000px;
   scrollbar-width: none;
+  overflow-x: hidden;
 }
-
-/* .main-screen {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/background.png") no-repeat center center;
-  background-size: contain;
-} */
 
 .main-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/background.png") no-repeat center center;
-  background-size: contain;
-}
-
-@media (min-width: 1024px) {
-  .background {
-    background-size: cover;
-  }
+  background-size: cover;
 }
 
 header {
@@ -41,14 +26,14 @@ header {
   height: 7%;
   color: white;
   font-weight: 600;
-  font-size: 100%;
-  margin-top: 10px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 1rem;
+  top: 0; /* Указываем конкретную позицию сверху */
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px; /* Добавлено для отступов внутри */
 }
 
 .logo-img {
@@ -57,13 +42,11 @@ header {
 
 nav {
   display: flex;
-  width: 100%;
   justify-content: center;
 }
 
 nav ul {
   list-style: none;
-  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -80,14 +63,33 @@ nav ul li a {
 .right-section {
   display: flex;
   min-width: 30%;
-  justify-content: end;
-  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
   flex-direction: row;
+}
+
+.language-selector-button,
+span {
+  font-size: 18px;
+  font-weight: 700;
+  background: transparent;
+  color: rgba(54, 255, 4, 0.8);
+  border: none;
+  cursor: pointer;
+}
+
+span {
+  cursor: default;
 }
 
 @media screen and (max-width: 1200px) {
   header {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  nav ul {
+    gap: 20px;
   }
 }
 
@@ -97,8 +99,22 @@ nav ul li a {
   }
 }
 
-@media (min-width: 1024px) {
-  .main-screen {
-    background-size: cover;
+@media screen and (max-width: 768px) {
+  /* Добавляем медиа-запрос для маленьких экранов */
+  header {
+    flex-direction: column; /* Перестраиваем header по вертикали */
+    height: auto; /* Даем возможность header адаптировать высоту */
+    font-size: 0.75rem; /* Уменьшаем размер шрифта */
+  }
+
+  nav ul {
+    flex-direction: column; /* Вертикально выстраиваем элементы меню */
+    gap: 10px; /* Уменьшаем промежутки между элементами */
+  }
+
+  .right-section {
+    width: 100%;
+    justify-content: center; /* Центрируем правую секцию */
+    margin-top: 10px; /* Добавляем отступ сверху */
   }
 }
