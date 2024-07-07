@@ -5,6 +5,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-weight: 600;
   scrollbar-width: none;
   overflow-x: hidden;
 }
@@ -125,6 +126,70 @@ span {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.description-title {
+  padding: 0 50px;
+  font-size: 2.4vw;
+  color: rgba(32, 152, 2, 0.8);
+}
+
+.fact-container,
+.fact-reverse {
+  display: flex;
+  padding: 0 50px;
+}
+
+.fact-reverse {
+  flex-direction: row-reverse;
+}
+
+.fact-img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.hexagon {
+  position: relative;
+  width: 100vw; /* Полная ширина экрана */
+  height: calc(100vw / 8); /* Высота по пропорции ширины */
+  background-color: rgba(54, 255, 4, 0.8);
+  border-width: 3px;
+  border-color: rgba(32, 152, 2, 0.8);
+  margin: 0 auto; /* Центрирование по горизонтали */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50vw solid transparent; /* Половина ширины основного элемента */
+  border-right: 50vw solid transparent; /* Половина ширины основного элемента */
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: calc(100vw / 14) solid rgba(54, 255, 4, 0.8); /* Половина высоты основного элемента */
+  /* border-width: 3px; */
+  /* border-color: rgba(32, 152, 2, 0.8); */
+}
+
+.hexagon:after {
+  top: 100%;
+  border-top: calc(100vw / 14) solid rgba(54, 255, 4, 0.8); /* Половина высоты основного элемента */
 }
 
 @media screen and (max-width: 1200px) {

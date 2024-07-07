@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hexagon Figure</title>
+    <style>
+      body,
+      html {
+        margin: 1000px 0;
+        scrollbar-width: none;
+      }
+
+      .hexagon {
+        position: relative;
+        width: 100vw; /* Полная ширина экрана */
+        height: calc(100vw / 8); /* Высота по пропорции ширины */
+        background-color: limegreen;
+        margin: 0 auto; /* Центрирование по горизонтали */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hexagon:before,
+      .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 50vw solid transparent; /* Половина ширины основного элемента */
+        border-right: 50vw solid transparent; /* Половина ширины основного элемента */
+      }
+
+      .hexagon:before {
+        bottom: 100%;
+        border-bottom: calc(100vw / 10) solid limegreen; /* Половина высоты основного элемента */
+      }
+
+      .hexagon:after {
+        top: 100%;
+        border-top: calc(100vw / 10) solid limegreen; /* Половина высоты основного элемента */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hexagon">
+      <div class="content">
+        <h1>История школы</h1>
+        <p>
+          fact that a reader will be distracted by the readable content of a
+          page when looking at its layout. The point of using Lorem Ipsum is
+          that it has a more-or-less normal distribution of letters, as opposed
+          to using 'Content here, content here', making it look like readable
+          English.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
