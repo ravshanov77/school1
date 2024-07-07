@@ -8,6 +8,7 @@ body {
   font-weight: 600;
   scrollbar-width: none;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .main-screen {
@@ -145,10 +146,22 @@ span {
 .fact-reverse {
   display: flex;
   padding: 0 50px;
+  font-size: 1.5vw;
+  align-items: center;
+  gap: 2vw;
 }
 
 .fact-reverse {
   flex-direction: row-reverse;
+  text-align: end;
+}
+
+.fact {
+  align-items: center;
+}
+
+.fact span {
+  font-size: 1.5vw;
 }
 
 .fact-img {
@@ -159,15 +172,14 @@ span {
 .hexagon {
   position: relative;
   width: 100vw; /* Полная ширина экрана */
-  height: calc(100vw / 8); /* Высота по пропорции ширины */
+  height: calc(100vw / 5); /* Высота по пропорции ширины */
   background-color: rgba(54, 255, 4, 0.8);
   border-width: 3px;
   border-color: rgba(32, 152, 2, 0.8);
-  margin: 0 auto; /* Центрирование по горизонтали */
+  margin: 170px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
   text-align: center;
 }
 
@@ -190,6 +202,32 @@ span {
 .hexagon:after {
   top: 100%;
   border-top: calc(100vw / 14) solid rgba(54, 255, 4, 0.8); /* Половина высоты основного элемента */
+}
+
+.news-container {
+  padding: 0 4vw;
+}
+
+.news-title-container {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  color: rgba(32, 152, 2, 0.8);
+}
+
+.news-title {
+  font-size: 2vw;
+}
+
+.new-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-image {
+  width: 24vw;
+  height: 60vh;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {
