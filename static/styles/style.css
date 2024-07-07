@@ -26,7 +26,7 @@ header {
   height: 7%;
   color: white;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -95,17 +95,17 @@ span {
   transform: translate(-50%, -50%);
   text-align: start;
   font-weight: 600;
-  font-size: 48px;
+  /* font-size: 20px; */
   color: white;
 }
 
 .info-title span {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   color: rgba(54, 255, 4, 0.8);
 }
 
 .info-title {
-  font-size: 48px;
+  /* font-size: 3rem; */
   margin-bottom: 20px;
 }
 
