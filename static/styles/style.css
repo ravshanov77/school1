@@ -88,6 +88,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 1rem;
   align-items: flex-start;
   position: absolute;
   top: 50%;
@@ -100,12 +101,12 @@ span {
 }
 
 .info-title span {
-  /* font-size: 3rem; */
+  font-size: 1em;
   color: rgba(54, 255, 4, 0.8);
 }
 
 .info-title {
-  /* font-size: 3rem; */
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
