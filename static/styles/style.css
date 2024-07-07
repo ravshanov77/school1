@@ -83,8 +83,6 @@ span {
   cursor: default;
 }
 
-/* 7 */
-
 .info-container {
   display: flex;
   flex-direction: column;
@@ -195,8 +193,6 @@ span {
 .hexagon:before {
   bottom: 100%;
   border-bottom: calc(100vw / 14) solid rgba(54, 255, 4, 0.8); /* Половина высоты основного элемента */
-  /* border-width: 3px; */
-  /* border-color: rgba(32, 152, 2, 0.8); */
 }
 
 .hexagon:after {
