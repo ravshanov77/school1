@@ -82,6 +82,48 @@ span {
   cursor: default;
 }
 
+/* 7 */
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+  font-weight: 600;
+  font-size: 48px;
+  color: white;
+}
+
+.info-title span {
+  font-size: 3rem;
+  color: rgba(54, 255, 4, 0.8);
+}
+
+.info-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.info {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.more-info-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: rgba(54, 255, 4, 0.8);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
   header {
     font-size: 0.95rem;
@@ -107,12 +149,12 @@ span {
 
   nav ul {
     flex-direction: column;
-    gap: 10px; /* Уменьшаем промежутки между элементами */
+    gap: 10px;
   }
 
   .right-section {
     width: 100%;
-    justify-content: center; /* Центрируем правую секцию */
-    margin-top: 10px; /* Добавляем отступ сверху */
+    justify-content: center;
+    margin-top: 10px;
   }
 }
