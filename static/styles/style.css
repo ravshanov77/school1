@@ -206,14 +206,11 @@ span {
 }
 
 .hexagon-svg {
+  position: relative;
   display: block; /* Ensures the SVG is block level to fill width */
   width: 100%; /* Ensures the container also spans the full width */
   overflow: hidden; /* Hides anything outside the bounds */
 }
-
-/* Ensure the viewBox and preserveAspectRatio are set correctly in the SVG */
-/* viewBox="0 0 100 86" controls the aspect ratio of the polygon */
-/* preserveAspectRatio="none" allows the shape to stretch to fill the container fully */
 
 .news-container {
   padding: 0 4vw;
