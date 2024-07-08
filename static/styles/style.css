@@ -170,13 +170,13 @@ span {
 .hexagon {
   position: relative;
   width: 100vw;
-  margin: 10px 0;
-  margin-bottom: 450px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 /* 
 .info-container,
 .description-container,
@@ -190,7 +190,7 @@ span {
 }
 
 .hexagon-svg {
-  position: absolute;
+  /* position: absolute; */
   display: block;
   width: 100%;
   overflow: hidden;
@@ -198,10 +198,11 @@ span {
 
 .content {
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 .news-container {
+  position: relative;
   padding: 0 4vw;
 }
 
