@@ -167,6 +167,8 @@ span {
   border-radius: 18px;
 }
 
+/* 7 */
+
 .hexagon {
   position: relative;
   width: 100vw;
@@ -177,20 +179,12 @@ span {
   text-align: center;
 }
 
-/* 
-.info-container,
-.description-container,
-.news-container {
-  position: relative;
-  z-index: 10; /* Higher than the hexagon */
-
 .hexagon-svg svg {
   width: 100vw;
   height: calc(100vw / 3);
 }
 
 .hexagon-svg {
-  /* position: absolute; */
   display: block;
   width: 100%;
   overflow: hidden;
@@ -200,9 +194,10 @@ span {
   position: relative;
   z-index: 10;
   text-align: center;
-  /* color: white; */
   border: 2px black;
 }
+
+/* 7 */
 
 .news-container {
   position: relative;
