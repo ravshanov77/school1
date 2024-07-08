@@ -167,49 +167,38 @@ span {
   border-radius: 18px;
 }
 
-/*
 .hexagon {
   position: relative;
-  width: 100vw; 
-  height: calc(100vw / 5); 
-  background-color: rgba(54, 255, 4, 0.8);
-  border: 3px solid rgba(32, 152, 2, 0.8); 
-  margin: 170px 0;
+  width: 100vw;
+  margin: 10px 0;
+  margin-bottom: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 50vw solid transparent; 
-  border-right: 50vw solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: calc(100vw / 14) solid rgba(54, 255, 4, 0.8); }
-
-.hexagon:after {
-  top: 100%;
-  border-top: calc(100vw / 14) solid rgba(54, 255, 4, 0.8); 
-}
-*/
+/* 
+.info-container,
+.description-container,
+.news-container {
+  position: relative;
+  z-index: 10; /* Higher than the hexagon */
 
 .hexagon-svg svg {
-  width: 100vw; /* Sets the width to cover the full viewport width */
-  height: calc(100vw / 3); /* Sets the height as per the provided calculation */
+  width: 100vw;
+  height: calc(100vw / 3);
 }
 
 .hexagon-svg {
+  position: absolute;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
   position: relative;
-  display: block; /* Ensures the SVG is block level to fill width */
-  width: 100%; /* Ensures the container also spans the full width */
-  overflow: hidden; /* Hides anything outside the bounds */
+  z-index: 100;
 }
 
 .news-container {
