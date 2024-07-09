@@ -231,6 +231,11 @@ p {
   font-size: 2vw;
 }
 
+.new-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .new {
   position: relative;
   display: inline-block;
@@ -245,11 +250,7 @@ p {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   mix-blend-mode: darken;
-}
-
-.new-container {
-  display: flex;
-  justify-content: space-between;
+  z-index: 1;
 }
 
 .new-image {
@@ -257,6 +258,29 @@ p {
   width: 24vw;
   height: 60vh;
   object-fit: cover;
+}
+
+.release-date,
+.new-info {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  padding: 10px;
+}
+
+.release-date {
+  top: 6%;
+  left: 6%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.new-info {
+  top: 50%;
+  left: 6%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 20vw;
 }
 
 @media screen and (max-width: 1200px) {
