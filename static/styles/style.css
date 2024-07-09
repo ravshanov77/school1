@@ -172,14 +172,13 @@ span {
 .hexagon {
   position: relative;
   width: 100vw;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .hexagon-svg svg {
+  display: block;
   width: 100vw;
   height: calc(100vw / 3);
 }
@@ -192,15 +191,32 @@ span {
 
 .content {
   position: relative;
-  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content {
+  position: absolute;
   text-align: center;
-  border: 2px black;
+  color: white;
+  padding: 20px;
+  z-index: 10;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.4vw;
+}
+
+p {
+  font-size: 1.2vw;
 }
 
 /* 7 */
 
 .news-container {
-  /* position: relative; */
   padding: 0 4vw;
 }
 
@@ -215,12 +231,29 @@ span {
   font-size: 2vw;
 }
 
+.new {
+  position: relative;
+  display: inline-block;
+}
+
+.new::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: darken;
+}
+
 .new-container {
   display: flex;
   justify-content: space-between;
 }
 
 .new-image {
+  display: block;
   width: 24vw;
   height: 60vh;
   object-fit: cover;
@@ -243,6 +276,10 @@ span {
 
   header {
     font-size: 0.8rem;
+  }
+
+  .new-image {
+    height: 45vh;
   }
 }
 
