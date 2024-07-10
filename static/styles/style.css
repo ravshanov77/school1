@@ -286,6 +286,8 @@ p {
 /* 7 */
 
 .swiper-container {
+  position: relative;
+  margin-top: 150px;
   width: 100vw;
   height: 70vh;
 }
@@ -309,6 +311,11 @@ p {
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  position: relative;
+} */
 
 @media screen and (max-width: 1200px) {
   header {
