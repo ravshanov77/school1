@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="static/styles/style.css" />
   </head>
 
@@ -134,6 +132,21 @@
         </div>
       </div>
     </section>
+
+    <script>
+      window.addEventListener("beforeunload", function () {
+        localStorage.setItem("scrollPosition", window.scrollY);
+      });
+
+      // Restore the scroll position when the page loads
+      window.addEventListener("load", function () {
+        const scrollPosition = localStorage.getItem("scrollPosition");
+        if (scrollPosition) {
+          window.scrollTo(0, parseInt(scrollPosition));
+          localStorage.removeItem("scrollPosition"); // Clear the scroll position after restoring
+        }
+      });
+    </script>
 
     <script src="static/scripts/app.js"></script>
   </body>
