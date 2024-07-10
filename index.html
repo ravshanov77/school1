@@ -8,6 +8,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="static/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -133,23 +137,79 @@
       </div>
     </section>
 
-    <script>
-      window.addEventListener("beforeunload", function () {
-        localStorage.setItem("scrollPosition", window.scrollY);
-      });
+    <section id="events">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="event-poster"
+              style="background-image: url('static/images/event1.png')"
+            >
+              <div class="event-text">
+                <h2>Выступление 3Б класса на утреннике</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
 
-      // Restore the scroll position when the page loads
-      window.addEventListener("load", function () {
-        const scrollPosition = localStorage.getItem("scrollPosition");
-        if (scrollPosition) {
-          window.scrollTo(0, parseInt(scrollPosition));
-          localStorage.removeItem("scrollPosition"); // Clear the scroll position after restoring
-        }
-      });
-    </script>
+          <div class="swiper-slide">
+            <div
+              class="event-poster"
+              style="background-image: url('static/images/event1.png')"
+            >
+              <div class="event-text">
+                <h2>Выступление 3Б класса на утреннике</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <div class="swiper-slide">
+            <div
+              class="event-poster"
+              style="background-image: url('static/images/event1.png')"
+            >
+              <div class="event-text">
+                <h2>Выступление 3Б класса на утреннике</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="event-poster"
+              style="background-image: url('static/images/event1.png')"
+            >
+              <div class="event-text">
+                <h2>Выступление 3Б класса на утреннике</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="static/scripts/app.js"></script>
     <script src="static/scripts/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
