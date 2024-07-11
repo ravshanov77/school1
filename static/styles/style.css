@@ -335,6 +335,31 @@ p {
   justify-content: space-between;
 }
 
+.statistics {
+  justify-content: first baseline;
+}
+
+.stat-amount {
+  display: flex;
+  justify-content: space-between;
+  /* width: 25vw;
+  height: 40vh; */
+  color: rgba(54, 255, 4, 0.8);
+}
+
+.stat-number {
+  font-family: Montserrat;
+  font-size: 7em;
+}
+
+.stat-quantity {
+  transform: rotate(270deg);
+}
+
+.stat-text {
+  color: rgba(32, 152, 2, 0.8);
+}
+
 @media screen and (max-width: 1200px) {
   header {
     font-size: 0.95rem;
