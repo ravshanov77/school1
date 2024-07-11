@@ -279,10 +279,9 @@ p {
   width: 20vw;
 }
 
-/* 7 */
-
 .event-title {
   padding: 7vh 4vw;
+  color: rgba(32, 152, 2, 0.8);
 }
 
 .swiper-container {
