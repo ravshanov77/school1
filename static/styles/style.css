@@ -292,18 +292,29 @@ p {
   height: 70vh;
 }
 .swiper-slide {
+  position: relative;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .event-poster {
   position: relative;
   width: 100%;
-  height: 100%; /* Убедитесь, что у блока есть высота */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.8),
-      /* Увеличьте значение для большего затемнения */ rgba(0, 0, 0, 0.8)
-    ),
-    url("path-to-your-image.jpg") no-repeat center center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: url("../images/event1.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -314,12 +325,8 @@ p {
   color: white;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
+  z-index: 2;
 }
-
-/* .swiper-button-next,
-.swiper-button-prev {
-  position: relative;
-} */
 
 @media screen and (max-width: 1200px) {
   header {
