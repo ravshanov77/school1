@@ -327,6 +327,14 @@ p {
   z-index: 2;
 }
 
+/* 7 */
+
+.statistics-container {
+  padding: 7vh 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 1200px) {
   header {
     font-size: 0.95rem;
