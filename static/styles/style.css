@@ -356,10 +356,10 @@ p {
 
 .stat-quantity {
   transform: rotate(270deg);
-  position: absolute; /* Add this line */
+  position: absolute;
   top: 0;
   /* bottom: 1vw; Adjust position as needed */
-  left: 90%; /* Adjust position as needed */
+  left: 90%;
   transform: translateX(-50%) rotate(270deg);
 }
 
