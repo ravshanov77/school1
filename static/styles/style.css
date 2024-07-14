@@ -367,6 +367,8 @@ p {
   color: rgba(32, 152, 2, 0.8);
 }
 
+/* 7 */
+
 @media screen and (max-width: 1200px) {
   header {
     font-size: 0.95rem;
