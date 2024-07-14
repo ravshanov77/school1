@@ -330,7 +330,7 @@ p {
 /* 7 */
 
 .statistics-container {
-  padding: 7vh 4vw;
+  padding: 0 4vw;
   display: flex;
   justify-content: space-between;
 }
@@ -351,13 +351,15 @@ p {
 
 .stat-number {
   font-family: Montserrat;
+  top: 0;
+  height: 100%;
   font-size: 7em;
 }
 
 .stat-quantity {
   transform: rotate(270deg);
   position: absolute;
-  top: 0;
+  top: 50%;
   /* bottom: 1vw; Adjust position as needed */
   left: 90%;
   transform: translateX(-50%) rotate(270deg);
