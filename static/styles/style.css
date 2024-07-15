@@ -369,6 +369,18 @@ p {
 
 /* 7 */
 
+.teacher-container {
+  display: grid;
+  grid-template-areas:
+    "teacher1 teacher2 teacher3"
+    "teacher4 teacher5 teacher6";
+  gap: 10px; /* Adjust as necessary */
+}
+
+.teacher-image {
+  width: 30vw;
+}
+
 @media screen and (max-width: 1200px) {
   header {
     font-size: 0.95rem;
