@@ -377,8 +377,22 @@ p {
   gap: 10px; /* Adjust as necessary */
 }
 
+.teachers-title {
+  text-align: center;
+  margin-bottom: 20px; /* Регулируйте значение, чтобы задать нужное расстояние */
+  color: rgba(
+    32,
+    152,
+    2,
+    0.8
+  ); /* Убедитесь, что цвет текста совпадает с остальными */
+  font-size: 2em; /* Регулируйте размер шрифта по вашему усмотрению */
+}
+
 .teacher-image {
   width: 30vw;
+  height: 50vh;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {
