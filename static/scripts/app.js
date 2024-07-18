@@ -9,3 +9,8 @@ window.addEventListener("DOMContentLoaded", function () {
     window.scrollTo(0, parseInt(scrollPosition));
   }
 });
+
+function toggleFaq(element) {
+  const faqItem = element.parentElement;
+  faqItem.classList.toggle("open");
+}
