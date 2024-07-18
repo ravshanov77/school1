@@ -2,7 +2,6 @@ window.addEventListener("beforeunload", function () {
   sessionStorage.setItem("scrollPosition", window.scrollY);
 });
 
-// Restore the scroll position when the page loads
 window.addEventListener("DOMContentLoaded", function () {
   const scrollPosition = sessionStorage.getItem("scrollPosition");
   if (scrollPosition) {
