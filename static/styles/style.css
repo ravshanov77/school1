@@ -401,8 +401,8 @@ p {
 /* 7 */
 
 .faq-section {
-  width: 80vw;
-  max-width: 1000px;
+  width: 92vw;
+  /* max-width: 1000px; */
   margin: 20px auto;
   background: #fff;
   border-radius: 8px;
