@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Контакты</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .contact-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .contact-form {
+        background-color: white;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form h1 {
+        color: #4caf50;
+      }
+
+      .contact-form p {
+        font-size: 14px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      #map {
+        width: 650px;
+        height: 400px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-container">
+      <div class="contact-form">
+        <h1>Контакты</h1>
+        <p>
+          Остались вопросы? оставьте свои данные чтобы мы могли связаться с вами
+          и ответить на ваши вопросы!
+        </p>
+        <input type="text" id="name" placeholder="Введите имя" />
+        <input type="email" id="email" placeholder="Введите email" />
+        <input type="tel" id="phone" placeholder="Введите номер" />
+        <textarea placeholder="Оставьте сообщение:"></textarea>
+        <button type="submit">Подтвердить</button>
+        <button type="button">Отменить</button>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script>
+      function initMap() {
+        var moscow = { lat: 55.755826, lng: 37.6172999 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: moscow,
+        });
+        var marker = new google.maps.Marker({
+          position: moscow,
+          map: map,
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=ВАШ_КЛЮЧ_API&callback=initMap"
+    ></script>
+  </body>
+</html>
