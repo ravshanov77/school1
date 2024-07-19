@@ -457,6 +457,8 @@ p {
   transition: transform 0.3s;
 }
 
+/* 7 */
+
 /* body {
   font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
@@ -466,6 +468,8 @@ p {
 
 .contact-container {
   display: flex;
+  width: 94vw;
+  margin: 20px auto;
   justify-content: center;
   margin-top: 50px;
 }
@@ -473,7 +477,7 @@ p {
 .contact-form {
   background-color: white;
   padding: 20px;
-  width: 300px;
+  width: 70%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
