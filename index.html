@@ -371,8 +371,8 @@
         <input type="email" id="email" placeholder="Введите email" />
         <input type="tel" id="phone" placeholder="Введите номер" />
         <input placeholder="Оставьте сообщение:" />
-        <button type="submit">Подтвердить</button>
-        <button type="button">Отменить</button>
+        <button class="submit-button" type="submit">Подтвердить</button>
+        <button class="submit-button" type="button">Отменить</button>
       </div>
       <div id="map"></div>
     </section>
@@ -380,5 +380,24 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="static/scripts/app.js"></script>
     <script src="static/scripts/swiper.js"></script>
+    <script>
+      function initMap() {
+        var moscow = { lat: 55.755826, lng: 37.6172999 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: moscow,
+        });
+        var marker = new google.maps.Marker({
+          position: moscow,
+          map: map,
+        });
+      }
+    </script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=ВАШ_КЛЮЧ_API&callback=initMap"
+    ></script>
   </body>
 </html>
