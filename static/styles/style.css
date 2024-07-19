@@ -471,7 +471,12 @@ p {
   width: 94vw;
   margin: 20px auto;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 4vw;
+}
+
+.contact-container input {
+  border-color: rgba(32, 152, 2, 0.8);
+  border-width: 2px;
 }
 
 .contact-form {
