@@ -504,8 +504,13 @@ textarea {
   box-sizing: border-box;
 }
 
+.contacts-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .submit-button {
-  width: 100%;
+  width: 48%;
   padding: 10px;
   margin-top: 10px;
   background-color: #4caf50;
