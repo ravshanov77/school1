@@ -540,7 +540,7 @@ button:hover {
 
 @media screen and (max-width: 1050px) {
   .main-screen {
-    height: 90%;
+    height: 70%;
   }
 
   header {
@@ -557,6 +557,10 @@ button:hover {
     flex-direction: column;
     height: auto;
     font-size: 0.75rem;
+  }
+
+  .main-screen {
+    height: 40%;
   }
 
   nav ul {
