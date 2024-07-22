@@ -472,6 +472,14 @@ p {
   border-width: 2px;
 }
 
+.contact-form p {
+  font-size: 10vw;
+}
+
+.question {
+  font-size: 3vw;
+}
+
 .contact-form {
   background-color: white;
   padding: 1.7vw;
