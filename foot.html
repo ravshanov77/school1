@@ -5,53 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Footer Example</title>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
       .footer {
-        border: 2px solid purple;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: fit-content;
-        margin: auto;
-      }
-      .footer img {
-        width: 50px;
-        height: 50px;
-      }
-      .footer .details {
-        text-align: center;
-      }
-      .footer .contacts {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        align-items: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-top: 1px solid #ccc;
+      }
+      .footer .logo {
+        display: flex;
+        align-items: center;
+      }
+      .footer .logo img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      .footer .logo span {
+        font-weight: bold;
+      }
+      .footer .contact-info {
+        text-align: center;
+      }
+      .footer .contact-info p {
+        margin: 5px 0;
+      }
+      .footer .additional-info {
+        text-align: right;
+      }
+      .footer .additional-info p {
+        margin: 5px 0;
       }
     </style>
   </head>
   <body>
-    <div class="footer">
-      <img src="logo.png" alt="School Logo" />
-      <div class="details">
-        <p>
-          Специализированная «коррекционная» школа номер 1 (VIII) восьмого вида
-          города Самарканда
-        </p>
-        <div class="contacts">
-          <div>
-            <p>+998915533044</p>
-            <p>Вопросы</p>
-            <p>События</p>
-            <p>Контакты</p>
-          </div>
-          <div>
-            <p>Политика конфиденциальности</p>
-            <p>Ул Гагарина 84</p>
-            <p>Сайт разработан в 2022 году</p>
-            <p>by liberty code</p>
-            <p>ориентир: институт сельхоз</p>
-          </div>
-        </div>
+    <footer class="footer">
+      <div class="logo">
+        <img src="path_to_logo.png" alt="Logo" />
+        <span
+          >Специализированная «коррекционная» школа номер 1 (VIII) восьмого вида
+          города самарканда</span
+        >
       </div>
-    </div>
+      <div class="contact-info">
+        <p>+998915533044</p>
+        <p>Вопросы</p>
+        <p>События</p>
+        <p>Контакты</p>
+      </div>
+      <div class="additional-info">
+        <p>Политика конфиденциальности</p>
+        <p>Сайт разработан в 2022 году</p>
+        <p>by liberty code</p>
+        <p>Ул Гагарина 84</p>
+        <p>ориентир: институт сельхоз</p>
+      </div>
+    </footer>
   </body>
 </html>
