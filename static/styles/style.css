@@ -557,7 +557,7 @@ footer {
 .navbar {
   display: flex;
   flex-direction: column;
-  font-size: 1.2em;
+  font-size: 2vw;
 }
 
 @media screen and (max-width: 1200px) {
