@@ -543,6 +543,10 @@ footer {
   width: 38vw;
 }
 
+.footer-contacts {
+  display: flex;
+}
+
 @media screen and (max-width: 1200px) {
   header {
     font-size: 0.95rem;
