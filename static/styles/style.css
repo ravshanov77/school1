@@ -56,7 +56,8 @@ nav ul {
   align-items: center;
 }
 
-nav ul li a {
+nav ul li a,
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -545,6 +546,18 @@ footer {
 
 .footer-contacts {
   display: flex;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+
+.footer-block {
+  width: 20vw;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
 }
 
 @media screen and (max-width: 1200px) {
