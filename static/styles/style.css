@@ -533,6 +533,7 @@ button:hover {
 
 footer {
   margin: 4vw 2vw;
+  font-size: 1vw;
 }
 
 .footer-heading {
@@ -557,7 +558,8 @@ footer {
 .navbar {
   display: flex;
   flex-direction: column;
-  font-size: 24px;
+  margin-top: 4vh;
+  font-size: 1.2vw;
 }
 
 @media screen and (max-width: 1200px) {
