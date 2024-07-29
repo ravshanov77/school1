@@ -601,4 +601,17 @@ footer {
     justify-content: center;
     margin-top: 10px;
   }
+
+  .description-title {
+    font-size: 3.4vw;
+  }
+
+  .fact-container,
+  .fact-reverse,
+  .fact-container span,
+  .fact-reverse span {
+    flex-direction: column;
+    font-size: 2.4vw;
+    text-align: center;
+  }
 }
