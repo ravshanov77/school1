@@ -618,4 +618,8 @@ footer {
   .fact-img {
     width: 77%;
   }
+
+  .text-content {
+    font-size: 32.4vw;
+  }
 }
