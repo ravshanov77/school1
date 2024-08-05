@@ -647,4 +647,12 @@ footer {
   .swiper-container {
     height: 40vh;
   }
+
+  .event-text h2 {
+    font-size: 1em;
+  }
+
+  .event-text p {
+    font-size: 0.7em;
+  }
 }
