@@ -664,5 +664,11 @@ footer {
 
   .statistics {
     align-items: center;
+    height: 30vh;
+  }
+
+  .stat-quantity {
+    font-size: 1em;
+    margin-top: 10vw;
   }
 }
