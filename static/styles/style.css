@@ -688,4 +688,12 @@ footer {
     height: 30vh;
     width: 45vw;
   }
+
+  .teacher-name {
+    font-size: 1.2em;
+  }
+
+  .teacher-info {
+    font-size: 0.7em;
+  }
 }
