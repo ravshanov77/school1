@@ -643,4 +643,8 @@ footer {
   .event-title {
     font-size: 1.4em;
   }
+
+  .swiper-container {
+    height: 40vh;
+  }
 }
