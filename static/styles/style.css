@@ -672,8 +672,20 @@ footer {
     margin-top: 10vw;
   }
 
+  .teacher-container {
+    grid-template-areas:
+      "teacher1 teacher2"
+      "teacher3 teacher4"
+      "teacher5 teacher6";
+  }
+
   .teachers-title {
     margin-top: 14vh;
-    font-size: 1em;
+    font-size: 1.8em;
+  }
+
+  .teacher-image {
+    height: 30vh;
+    width: 45vw;
   }
 }
