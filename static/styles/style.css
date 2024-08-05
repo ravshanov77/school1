@@ -655,4 +655,14 @@ footer {
   .event-text p {
     font-size: 0.7em;
   }
+
+  .statistics-container {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .statistics {
+    align-items: center;
+  }
 }
