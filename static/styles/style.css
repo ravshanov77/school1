@@ -671,4 +671,9 @@ footer {
     font-size: 1em;
     margin-top: 10vw;
   }
+
+  .teachers-title {
+    margin-top: 10vh;
+    font-size: 1em;
+  }
 }
