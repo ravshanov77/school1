@@ -622,4 +622,21 @@ footer {
   .text-content {
     font-size: 32.4vw;
   }
+
+  .news-title {
+    font-size: 1em;
+  }
+
+  .new-container {
+    flex-direction: column;
+    gap: 8vw;
+  }
+
+  .new-image {
+    width: 100%;
+  }
+
+  .new-info {
+    width: 70%;
+  }
 }
