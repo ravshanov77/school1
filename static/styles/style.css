@@ -696,4 +696,8 @@ footer {
   .teacher-info {
     font-size: 0.7em;
   }
+
+  .footer-block {
+    font-size: 10px;
+  }
 }
