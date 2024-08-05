@@ -639,4 +639,8 @@ footer {
   .new-info {
     width: 70%;
   }
+
+  .event-title {
+    font-size: 1.4em;
+  }
 }
